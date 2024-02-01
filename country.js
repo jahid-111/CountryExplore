@@ -13,16 +13,12 @@ const explore = country => {
     
         const exploreContainer =  document.querySelector(".explore-Container")
         // console.log(exploreContainer)
-        function processCountries(countries) {
-            return countries.map(country => {
-                return {
-                    name: country.name.common,
-                    capital: country.capital[0] || 'N/A', // Example property, customize as needed
-                    // Add more properties as needed
-                };
-            });
-        }
-        console.log(processCountries())
+        let get = []
+            for(const countrys of country){
+                get.push(countrys)
+            }
+
+
 
 
             
